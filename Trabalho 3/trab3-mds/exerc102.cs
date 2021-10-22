@@ -1,0 +1,45 @@
+using System;
+
+namespace Trabalho_3
+{
+    public class exerc102
+    {
+        public static void Maior3(){
+            System.Console.WriteLine("Exercício 10.2: Escreva um algoritmo que receba 3 valores. Verifique:\n Qual o maior valor;\n Ou se são iguais.");
+            Console.ReadKey();
+            //---------------------------------------------------------------------------------
+
+            System.Console.Write("Informe o primeiro valor: ");
+            int valor1 = int.Parse(Console.ReadLine());
+            
+            System.Console.Write("Informe o segundo valor: ");
+            int valor2 = int.Parse(Console.ReadLine());
+
+            System.Console.Write("Informe o terceiro valor: ");
+            int valor3 = int.Parse(Console.ReadLine());
+            //---------------------------------------------------------------------------------
+
+            if (valor1 > valor2 && valor1 > valor3){
+                //Valor1 é o Maior
+                System.Console.WriteLine("\n-- O primeiro valor (" + valor1 + ") é o Maior!");
+            }
+            else if (valor2 > valor1 && valor2 > valor3){
+                //Valor2 é o Maior
+                System.Console.WriteLine("\n-- O segundo valor (" + valor2 + ") é o Maior!");
+            }
+            else if (valor3 > valor1 && valor3 > valor2){
+                //Valor3 é o Maior
+                System.Console.WriteLine("\n-- O terceiro valor (" + valor3 + ") é o Maior!");
+            }
+            else if (valor1 == valor2 && valor1 == valor3){
+                //Os valores são todos iguais
+                System.Console.WriteLine("Todos os valores são iguais!");
+            }
+            //---------------------------------------------------------------------------------
+
+            System.Console.WriteLine("\n\n\nAté o próximo exercício!");
+            System.Console.WriteLine("----------------------------------------");
+            Console.ReadKey();
+        }
+    }
+}
